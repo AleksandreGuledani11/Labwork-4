@@ -9,15 +9,13 @@ class Program
         string b = "5";
         double c = 5.0;
 
-        // Operations
-        Console.WriteLine(a + c);   // ✅ 10.0 (int promoted to double)
-        Console.WriteLine(a + b);   // ✅ "55" (string concatenation)
-        Console.WriteLine(b + c);   // ✅ "55" (string concatenation)
+        Console.WriteLine(a + c);   
+        Console.WriteLine(a + b);   
+        Console.WriteLine(b + c);   
 
-        // Explicit casts to make all succeed
-        Console.WriteLine(a + Convert.ToInt32(b));  // ✅ 10
-        Console.WriteLine((double)a + c);           // ✅ 10.0
-        Console.WriteLine(a.ToString() + b);        // ✅ "55"
+        Console.WriteLine(a + Convert.ToInt32(b));  
+        Console.WriteLine((double)a + c);           
+        Console.WriteLine(a.ToString() + b);        
     }
 }
 
